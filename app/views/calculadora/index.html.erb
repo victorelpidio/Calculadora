@@ -1,0 +1,26 @@
+<h1>Calculadora</h1>
+
+<%= form_with url: '/calculate', method: :post, local: true do |f| %>
+  <div>
+    <%= label_tag :num1, "Primeiro Número" %>
+    <%= text_field_tag :num1, params[:num1] %>
+  </div>
+
+  <div>
+    <%= label_tag :num2, "Segundo Número" %>
+    <%= text_field_tag :num2, params[:num2] %>
+  </div>
+
+  <div>
+    <%= label_tag :operation, "Operação" %>
+    <%= select_tag :operation, options_for_select([['Adição', 'add'], ['Subtração', 'subtract'], ['Multiplicação', 'multiply'], ['Divisão', 'divide']], params[:operation]) %>
+  </div>
+
+  <div>
+    <%= submit_tag "Calcular" %>
+  </div>
+<% end %>
+
+<% if @result %>
+  <h2>Resultado: <%= @result %></h2>
+<% end %>
