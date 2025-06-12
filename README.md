@@ -1,24 +1,35 @@
-# README
+Calculadora Básica – Ruby on Rails
+Uma aplicação simples de calculadora, desenvolvida com Ruby on Rails, para realizar operações matemáticas básicas:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Adição
+Subtração
+Multiplicação
+Divisão
 
-Things you may want to cover:
+🚀 Tecnologias Utilizadas
+Ruby 3.x
+Rails 6.1
+SQLite (banco padrão para desenvolvimento)
 
-* Ruby version
+📦 Como Executar o Projeto Localmente
+Clone o repositório:
+git clone https://github.com/seu-usuario/calculadora-rails.git
+cd calculadora-rails
 
-* System dependencies
+Instale as dependências:
+bundle install
+Configure o banco de dados:
+rails db:setup
 
-* Configuration
+Inicie o servidor:
+Depois, acesse a aplicação em: http://localhost:3000
 
-* Database creation
+🧠 Como Funciona
+A calculadora possui um formulário onde o usuário insere dois números e escolhe a operação desejada. O resultado é exibido logo em seguida.
 
-* Database initialization
+✅ Funcionalidades
+Operações básicas com dois números
+Interface simples (HTML padrão)
+Sem necessidade de login ou cadastro
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
